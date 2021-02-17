@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <title>Add Product</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/">Shop</a></li>
-                <li><a href="/add-product">Add Products</a></li>
-            </ul>
-        </nav>
+        <div class="block">
+            <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a href="/" class="navbar-item">
+                        <h1 class="title is-4">Udemy Products</h1>
+                    </a>
+                </div>  
+                <div class="navbar-menu is-active" id="navMenu">
+                    <div class="navbar-start ">
+                        <a href="/" class="navbar-item">Shop</a>
+                        <a href="/admin/add-product" class="navbar-item">Add Products</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <form action="/add-product" method="post">
